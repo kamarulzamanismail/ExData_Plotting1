@@ -2,3 +2,5 @@ plot(house_sub$dt, house_sub$Sub_metering_1, type = "l", xlab = "", ylab = "Ener
 points(house_sub$dt, house_sub$Sub_metering_2, type = "l", col = "red")
 points(house_sub$dt, house_sub$Sub_metering_3, type = "l", col = "blue")
 legend("topright", lty = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+dev.copy(png, 'plot3.png')
+dev.off()
